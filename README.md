@@ -1,11 +1,11 @@
 # Sunday
 How to run
 
-You will need python 2.7 or above
-Clone this repository and cd into it
-Delete botbrain
-Run pip -r install requirements.txt in your terminal/cmd prompt
-python main.py
+  - You will need python 2.7 or above
+  - clone this repository and cd into it
+  - delete botbrain
+  - run pip -r install requirements.txt in your terminal/cmd prompt
+  - python main.py
 Go to localhost:5000 in your browser and voila
 
 If you want to see, where the responses are coming from, go to aiml/standard (Not all are standard templates, some have been modified also)
