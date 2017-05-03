@@ -7,24 +7,61 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
         <style type="text/css">
             .fixed-panel {
-                min-height: 400px;
-                max-height: 400px;
+                min-height: 450px;
+                max-height: 450px;
                 overflow-y: scroll;
             }
             .media-list {
                 overflow: auto;
+            }
+            .panel-group .panel + .panel {
+                margin-bottom: 0;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <h1 class="text-center">sunday</h1>
+                <h1 class="text-right">sunday</h1>
 
-                <div class="col-md-12">
+                <div class="col-md-6">
+                    <div id="suggestionsPanel" class="panel panel-info">
+                        <div class="panel-heading">
+                            <strong><span class="glyphicon glyphicon-tasks"></span>  Some things you can ask me:</strong>
+                        </div>
+                        <div class="panel-body fixed panel">
+                          <ul class="list-styled">
+                            <p></p>  
+                            <li>Information about computers</li>
+                            <p></p>
+                            <li>Stories of life</li>
+                            <p></p>
+                            <li>What's up</li>
+                            <p></p>
+                             <li>What is your name?</li>
+                            <p></p>
+                            <li>How is the weather today?</li>
+                            <p></p>
+                              <li>What is C?</li><p></p>
+                              <li>What is Python?</li><p></p>
+                              <li>Tell me about you.</li><p></p>
+                              <li>Do you have friends?</li><p></p>
+                              <li>What is life?</li><p></p>
+                            <li>What is Java?</li>
+                            <p></p>
+                            <li>Who is your botmaster?</li>
+                              <p></p>
+                            <li>Who is Prachi?</li>
+                              <p></p>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
                     <div id="chatPanel" class="panel panel-info">
                         <div class="panel-heading">
-                            <strong><span class="glyphicon glyphicon-list"></span>Your chats with sunday</strong>
+                            <strong><span class="glyphicon glyphicon-tasks"></span>  Your chats with sunday</strong>
                         </div>
                         <div class="panel-body fixed-panel">
                             <ul class="media-list">
@@ -33,7 +70,7 @@
                         <div class="panel-footer">
                             <form method="post" id="chatbot-form">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Chat with our bot?" name="messageText" id="messageText" autofocus/>
+                                    <input type="text" class="form-control" placeholder="Chat with sunday?" name="messageText" id="messageText" autofocus/>
                                     <span class="input-group-btn">
                                         <button class="btn btn-info" type="button" id="chatbot-form-btn">SEND <span class="glyphicon glyphicon-send"></span></button>
                                     </span>
@@ -42,8 +79,10 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
+        <p align=right>Developed by Dev Chappals™ </p>
 
         <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
